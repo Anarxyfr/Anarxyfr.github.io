@@ -1,0 +1,99 @@
+body {
+    background-color: #2f3136; /* Darker background color */
+    color: #ffffff; /* Light text color for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 80px;
+    background-color: #202225;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.server {
+    margin: 10px 0;
+}
+
+.server-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b9bbbe; /* Lighter text color for server names */
+    cursor: pointer;
+}
+
+.server-icon span {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #36393f; /* Slightly lighter background for content area */
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top */
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.content {
+    width: 100%; /* Make content take full width */
+    text-align: left; /* Align text to the left */
+}
+
+.content.welcome-content {
+    text-align: center; /* Center text for the welcome content */
+}
+
+.content h2 {
+    text-align: center; /* Center genre titles */
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.content img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    color: #3498db; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
