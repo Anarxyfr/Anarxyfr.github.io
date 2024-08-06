@@ -4,7 +4,7 @@ document.querySelectorAll('.server').forEach(server => {
         let content = `<h2>${genre} Games</h2><p>List of ${genre} games will be displayed here.</p>`;
 
         if (genre === 'Horror') {
-            const proxiedUrl = `https://www.croxyproxy.com/?url=https%3A%2F%2Fwellsousaaa.github.io%2FFive-Nights-at-Freddys-Web%2F`;
+            const proxiedUrl = `https://www.lablancer.com/browse.php?u=https%3A%2F%2Fwellsousaaa.github.io%2FFive-Nights-at-Freddys-Web%2F&b=1`;
             content = `<h2>${genre} Games</h2>
                         <ul>
                             <li><a href="${proxiedUrl}" target="_blank">Five Nights at Freddy's</a></li>
