@@ -18,4 +18,8 @@ document.querySelectorAll('.server').forEach(server => {
     });
 });
 
+function maskLink(element) {
+    setTimeout(() => {
+        element.href = 'about:blank';
+    }, 1000);
 }
