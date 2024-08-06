@@ -4,7 +4,7 @@ document.querySelectorAll('.server').forEach(server => {
         let content = `<h2>${genre} Games</h2><p>List of ${genre} games will be displayed here.</p>`;
 
         if (genre === 'Horror') {
-            const proxiedUrl = `http://134.122.26.11:80/https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/`;
+            const proxiedUrl = `http://134.122.26.11/https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/`;
             content = `<h2>${genre} Games</h2>
                         <ul>
                             <li><a href="${proxiedUrl}" target="_blank">Five Nights at Freddy's</a></li>
