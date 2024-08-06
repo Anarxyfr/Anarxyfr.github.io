@@ -6,7 +6,7 @@ document.querySelectorAll('.server').forEach(server => {
         if (genre === 'Horror') {
             content = `<h2>${genre} Games</h2>
                         <ul>
-                            <li><a href="https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/" target="_blank" onclick="maskLink(this)">Five Nights at Freddy's</a></li>
+                            <li><a href="https://your-proxy-server.com/proxy?url=https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/" target="_blank" onclick="maskLink(this)">Five Nights at Freddy's</a></li>
                             <!-- Add more horror games links here -->
                         </ul>`;
         }
