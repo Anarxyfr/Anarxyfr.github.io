@@ -4,9 +4,10 @@ document.querySelectorAll('.server').forEach(server => {
         let content = `<h2>${genre} Games</h2><p>List of ${genre} games will be displayed here.</p>`;
 
         if (genre === 'Horror') {
+            const proxiedUrl = `http://13.115.229.80:3128/https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/`;
             content = `<h2>${genre} Games</h2>
                         <ul>
-                            <li><a href="https://your-proxy-server.com/proxy?url=https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/" target="_blank" onclick="maskLink(this)">Five Nights at Freddy's</a></li>
+                            <li><a href="${proxiedUrl}" target="_blank">Five Nights at Freddy's</a></li>
                             <!-- Add more horror games links here -->
                         </ul>`;
         }
@@ -17,9 +18,3 @@ document.querySelectorAll('.server').forEach(server => {
         document.querySelector('.genre-content').style.display = 'block';
     });
 });
-
-function maskLink(element) {
-    setTimeout(() => {
-        element.href = 'about:blank';
-    }, 1000);
-}
