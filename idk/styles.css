@@ -1,0 +1,43 @@
+body {
+    background-color: #1a0c1d; /* Darker purple */
+    color: #e0e0e0; /* Light gray text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s; /* Smooth transition for background */
+}
+
+header {
+    background-color: #4b3c58; /* Dark purple */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #e0e0e0; /* Light gray text */
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4b3c58; /* Dark purple */
+}

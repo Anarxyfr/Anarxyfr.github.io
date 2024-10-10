@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripts - Anarxy's Hacks and Scripts</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Prism CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" />
+</head>
+<body>
+    <header>
+        <h1>Anarxy's Hacks and Scripts</h1>
+        <nav>
+            <ul>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Scripts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="scripts">
+            <h2>Scripts</h2>
+            <p>Check out our current hacks while we work on more!</p>
+
+            <h3>Gimkit All Answers Correct</h3>
+            <pre><code id="gimkitCode" class="language-javascript">Loading...</code></pre>
+
+            <h4>Bookmarklet</h4>
+            <p>To create a bookmarklet, drag the link below to your bookmarks bar:</p>
+            <a id="bookmarkletLink" href="#">Gimkit All Answers Bookmarklet</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anarxy. All rights reserved.</p>
+    </footer>
+
+    <!-- Include Prism JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+    
+    <script>
+        // Fetch the contents of gimkit.js from the provided URL and display it in the embed
+        fetch('https://raw.githubusercontent.com/Anarxyfr/stuff/refs/heads/main/gimkit.js?token=GHSAT0AAAAAACYPRJ7XCN7YJEUUYCE3O4R4ZYHIZWA')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('gimkitCode').textContent = data;
+                Prism.highlightElement(document.getElementById('gimkitCode')); // Syntax highlighting
+            })
+            .catch(error => {
+                document.getElementById('gimkitCode').textContent = 'Failed to load script: ' + error.message;
+            });
+
+        // Fetch the bookmarklet code from the provided URL
+        fetch('https://raw.githubusercontent.com/Anarxyfr/stuff/refs/heads/main/gimkitbookmarklet.js?token=GHSAT0AAAAAACYPRJ7W2DM7ABYV675S2HLMZYHI3IQ')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                // Set the bookmarklet link without embedding the code
+                document.getElementById('bookmarkletLink').href = `javascript:${encodeURIComponent(data)}`;
+            })
+            .catch(error => {
+                document.getElementById('bookmarkletLink').textContent = 'Failed to load bookmarklet: ' + error.message;
+            });
+    </script>
+</body>
+</html>
